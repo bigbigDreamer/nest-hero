@@ -1,4 +1,5 @@
 export class HelloDto {
-    name: string;
-    age: number;
+  name: string;
+  age: number;
+  sex: 'man' | 'woman';
 }
