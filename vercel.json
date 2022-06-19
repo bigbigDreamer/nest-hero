@@ -17,6 +17,10 @@
         "PUT",
         "DELETE"
       ]
+    },
+    {
+      "src": "/api",
+      "dest": "/api"
     }
   ]
 }
