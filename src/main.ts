@@ -1,7 +1,7 @@
 import { NestFactory } from '@nestjs/core';
-import { Logger } from '@nestjs/common';
+// import { Logger } from '@nestjs/common';
 import { NestExpressApplication } from '@nestjs/platform-express';
-import * as morgan from 'morgan';
+// import * as morgan from 'morgan';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { AppModule } from './app.module';
 import { join } from 'path';
@@ -9,15 +9,15 @@ import { join } from 'path';
 const env = process.env.NODE_ENV;
 
 async function bootstrap() {
-  const logger = new Logger('Request');
+  // const logger = new Logger('Request');
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
-  app.use(
-    morgan('tiny', {
-      stream: {
-        write: (message) => logger.log(message.replace('\n', '')),
-      },
-    }),
-  );
+  // app.use(
+  //   morgan('tiny', {
+  //     stream: {
+  //       write: (message) => logger.log(message.replace('\n', '')),
+  //     },
+  //   }),
+  // );
 
   const config = new DocumentBuilder()
     .setTitle('Demo Application')
