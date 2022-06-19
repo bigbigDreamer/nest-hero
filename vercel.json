@@ -4,14 +4,7 @@
   "builds": [
     {
       "src": "src/main.ts",
-      "use": "@vercel/node",
-      "config": {
-        "include": [
-          "config",
-          "public",
-          "api"
-        ]
-      }
+      "use": "@vercel/node"
     }
   ],
   "routes": [

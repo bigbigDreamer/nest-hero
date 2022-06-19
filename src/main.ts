@@ -6,8 +6,6 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { AppModule } from './app.module';
 import { join } from 'path';
 
-const env = process.env.NODE_ENV;
-
 async function bootstrap() {
   // const logger = new Logger('Request');
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
@@ -26,8 +24,8 @@ async function bootstrap() {
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
-  // 配置 swagger 文档的相关配置信息，包含 自定义的 css ，以及 sagger ui 界面上显示的一些信息
-  SwaggerModule.setup('/api', app, document, {
+  // 配置 swagger 文档的相关配置信息，包含 自定义的 css ，以及 swagger ui 界面上显示的一些信息
+  SwaggerModule.setup('api', app, document, {
     customCssUrl: '/css/theme-material.css',
   });
 
