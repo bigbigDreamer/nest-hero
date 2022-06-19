@@ -33,7 +33,7 @@ async function bootstrap() {
 
   app.useStaticAssets(join(__dirname, '..', 'public'));
 
-  await app.listen(3001);
+  await app.listen(3008);
 }
 
 bootstrap();
