@@ -10,7 +10,7 @@ const env = process.env.NODE_ENV;
 
 const port = {
   local: 3000,
-  prod: 443,
+  prod: 3001,
 };
 
 async function bootstrap() {
