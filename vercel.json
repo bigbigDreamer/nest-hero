@@ -3,7 +3,7 @@
   "name": "nest-hero",
   "builds": [
     {
-      "src": "**",
+      "src": "src/main.ts",
       "use": "@vercel/node",
       "config": {
         "include": [
