@@ -9,7 +9,7 @@
     },
     {
       "src": "*.css",
-      "use": "@vercel/static"
+      "use": "@vercel/static-build"
     }
   ],
   "routes": [
