@@ -7,14 +7,14 @@
       "use": "@vercel/node"
     },
     {
-      "src": "./dist/main.js",
+      "src": "dist/main.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "./dist/main.js",
+      "dest": "dist/main.js",
       "methods": [
         "POST",
         "GET",
