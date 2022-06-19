@@ -6,6 +6,13 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { AppModule } from './app.module';
 import { join } from 'path';
 
+const env = process.env.NODE_ENV;
+
+const port: {
+  local: 3000;
+  prod: 443;
+};
+
 async function bootstrap() {
   const logger = new Logger('Request');
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
@@ -31,6 +38,7 @@ async function bootstrap() {
 
   app.useStaticAssets(join(__dirname, '..', 'public'));
 
-  await app.listen(3000);
+  await app.listen(port[env]);
 }
+
 bootstrap();
