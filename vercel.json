@@ -1,6 +1,7 @@
 {
   "version": 2,
   "name": "nest-hero",
+  "trailingSlash": true,
   "builds": [
     {
       "src": "src/main.ts",
@@ -21,10 +22,6 @@
         "PUT",
         "DELETE"
       ]
-    },
-    {
-      "src": "/api",
-      "dest": "/api"
     }
   ]
 }
