@@ -3,7 +3,7 @@
   "name": "nest-hero",
   "builds": [
     {
-      "src": "./dist/main.js",
+      "src": "package.json",
       "use": "@vercel/node"
     }
   ],
