@@ -17,6 +17,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.0.0
   '@typescript-eslint/parser': ^5.0.0
   '@vercel/node': ^2.2.0
+  '@vercel/static-build': ^1.0.1
   cross-env: ^7.0.3
   eslint: ^8.0.1
   eslint-config-prettier: ^8.3.0
@@ -48,6 +49,7 @@ dependencies:
   '@nestjs/platform-express': 8.4.6_24ca02718c236197ee32dbe80f8a4d36
   '@nestjs/swagger': 5.2.1_1303a0d9aa1d86a30015480e850cef97
   '@vercel/node': 2.2.0
+  '@vercel/static-build': 1.0.1
   fork-ts-checker-webpack-plugin: 7.2.11_typescript@4.7.3+webpack@5.73.0
   js-yaml: 4.1.0
   morgan: 1.10.0
@@ -1430,6 +1432,10 @@ packages:
       node-fetch: 2.6.1
       ts-node: 8.9.1_typescript@4.3.4
       typescript: 4.3.4
+    dev: false
+
+  /@vercel/static-build/1.0.1:
+    resolution: {integrity: sha512-6Gbtbdabse+9rvGKjK6G9mmRVw4hIzSTeEXRaGEvW2f2hRD6jAzw3RLMA66R+olaxzsqz404oUL0WgILMd67nQ==}
     dev: false
 
   /@vercel/static-config/2.0.1:

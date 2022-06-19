@@ -27,6 +27,7 @@
     "@nestjs/platform-express": "^8.0.0",
     "@nestjs/swagger": "^5.2.1",
     "@vercel/node": "^2.2.0",
+    "@vercel/static-build": "^1.0.1",
     "fork-ts-checker-webpack-plugin": "^7.2.11",
     "js-yaml": "^4.1.0",
     "morgan": "^1.10.0",
