@@ -1,6 +1,12 @@
 {
   "version": 2,
   "name": "nest-hero",
+  "builds": [
+    {
+      "src": "./dist/main.js",
+      "use": "@vercel/node"
+    }
+  ],
   "routes": [
     {
       "src": "/(.*)",
