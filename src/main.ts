@@ -8,9 +8,9 @@ import { join } from 'path';
 
 const env = process.env.NODE_ENV;
 
-const port: {
-  local: 3000;
-  prod: 443;
+const port = {
+  local: 3000,
+  prod: 443,
 };
 
 async function bootstrap() {
