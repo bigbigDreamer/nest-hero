@@ -8,7 +8,7 @@
       "use": "@vercel/node"
     },
     {
-      "src": "*.css",
+      "src": "**/*.css",
       "use": "@vercel/static-build"
     }
   ],
