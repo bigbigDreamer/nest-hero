@@ -4,14 +4,11 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/node",
-      "config": {
-        "include": [
-          "config",
-          "public",
-          "src"
-        ]
-      }
+      "use": "@vercel/node"
+    },
+    {
+      "src": "./dist/main.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
