@@ -28,7 +28,7 @@ async function bootstrap() {
   const document = SwaggerModule.createDocument(app, config);
   // 配置 swagger 文档的相关配置信息，包含 自定义的 css ，以及 sagger ui 界面上显示的一些信息
   SwaggerModule.setup('api', app, document, {
-    customCssUrl: 'http://localhost:3000/css/theme-material.css',
+    customCssUrl: '/css/theme-material.css',
   });
 
   app.useStaticAssets(join(__dirname, '..', 'public'));
