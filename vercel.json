@@ -6,10 +6,6 @@
     {
       "src": "src/main.ts",
       "use": "@vercel/node"
-    },
-    {
-      "src": "**/*.css",
-      "use": "@vercel/static-build"
     }
   ],
   "routes": [
