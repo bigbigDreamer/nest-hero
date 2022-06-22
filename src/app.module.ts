@@ -20,6 +20,17 @@ import configuration from './config';
       provide: APP_FILTER,
       useClass: BaseExceptionFilter,
     },
+    {
+      provide: 'ANY_VALUE',
+      useValue: 'Hello World',
+    },
+    {
+      provide: 'TEST_ANY_VALUE',
+      useFactory: (anyValue: string) => {
+        console.log(anyValue);
+      },
+      inject: [{ token: 'ANY_VALUE', optional: true }],
+    },
   ],
 })
 export class AppModule {}
